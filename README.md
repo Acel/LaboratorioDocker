@@ -26,4 +26,10 @@ Detengo y elimino el contenedor: `docker stop pg` y `docker rm pg`
 Creo el nuevo contenedor, pero el volumen ya existe, porque no ha sido borrado: `docker run -d --name pg2 -e POSTGRES_PASSWORD=0010 -v pgdata:/var/lib/postgresql postgres`
 Compruebo que los datos siguen existiendo.
 <img width="1075" height="286" alt="image" src="https://github.com/user-attachments/assets/2b69a9d1-3576-47e8-8f5e-2d88232674ac" />
+### Ejercicio 4
+Creo el fichero index.html en una carpeta local de mi máquina e inicio el contenedor de este modo: `docker run -d --name nginx -p 80:80 -v ${PWD}/index.html:/usr/share/nginx/html/index.html nginx`
+Al abrir localhost se puede ver el resultado correctamente.
+<img width="320" height="140" alt="image" src="https://github.com/user-attachments/assets/7f4a2b00-7fac-4f32-b4c6-adc727b06fc5" />
+Si modifico mi archivo localmente, el cambio aparece de inmediato en el contenedor, como se puede apreciar en la captura siguiente.
+<img width="368" height="159" alt="image" src="https://github.com/user-attachments/assets/1153ae0a-dead-496d-aeef-e30c256f2e4c" />
 
