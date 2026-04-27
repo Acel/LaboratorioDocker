@@ -18,4 +18,12 @@ Por último, modifico la línea anteriormente creada para añadirle wget: `RUN a
 Quedando mis imágenes como en la captura siguiente.
 <img width="754" height="286" alt="image" src="https://github.com/user-attachments/assets/9be1be8c-20de-4829-9915-c70125638a7e" />
 El resultado que se puede ver es que con cada build se crea una nueva versión de la imagen, ocupando espacio en disco. Se podrían borrar con el comando `docker rmi limpieza:v1 limpieza:v2`
+### Ejercicio 3
+Ejecuto el contenedor, creando un nuevo volumen con el siguiente comando: `docker run -d --name pg -e POSTGRES_PASSWORD=0010 -v pgdata:/var/lib/postgresql postgres`
+Me conecto, creo la tabla e inserto un registro del siguiente modo, según la captura.
+<img width="565" height="382" alt="image" src="https://github.com/user-attachments/assets/a4f31ae0-4b04-496a-a9eb-97ec88e09722" />
+Detengo y elimino el contenedor: `docker stop pg` y `docker rm pg`
+Creo el nuevo contenedor, pero el volumen ya existe, porque no ha sido borrado: `docker run -d --name pg2 -e POSTGRES_PASSWORD=0010 -v pgdata:/var/lib/postgresql postgres`
+Compruebo que los datos siguen existiendo.
+<img width="1075" height="286" alt="image" src="https://github.com/user-attachments/assets/2b69a9d1-3576-47e8-8f5e-2d88232674ac" />
 
