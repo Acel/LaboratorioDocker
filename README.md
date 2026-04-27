@@ -11,4 +11,11 @@ Tras crear un Dockerfile en mi carpeta actual, con las dos líneas que indica el
 <img width="1094" height="533" alt="image" src="https://github.com/user-attachments/assets/58a5dde3-5d74-4311-9c9d-4a016ab2b5e3" />
 Para ver las capas de la imagen, tan solo habría que ejecutar el siguiente comando.
 <img width="1015" height="173" alt="image" src="https://github.com/user-attachments/assets/02088494-9435-4dce-9726-708324153e18" />
+### Ejercicio 2
+Creo un Dockerfile con un simple `FROM ubuntu` y construyo la imagen: `docker build -t limpieza:v1 .`
+Después añado la siguiente línea al dockerfile: `RUN apt-get update && apt-get install -y curl` y vuelvo a construir: `docker build -t limpieza:v2 .`
+Por último, modifico la línea anteriormente creada para añadirle wget: `RUN apt-get update && apt-get install -y curl wget` y vuelvo a construir: `docker build -t limpieza:v3 .`
+Quedando mis imágenes como en la captura siguiente.
+<img width="754" height="286" alt="image" src="https://github.com/user-attachments/assets/9be1be8c-20de-4829-9915-c70125638a7e" />
+El resultado que se puede ver es que con cada build se crea una nueva versión de la imagen, ocupando espacio en disco. Se podrían borrar con el comando `docker rmi limpieza:v1 limpieza:v2`
 
