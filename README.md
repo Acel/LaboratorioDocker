@@ -32,4 +32,7 @@ Al abrir localhost se puede ver el resultado correctamente.
 <img width="320" height="140" alt="image" src="https://github.com/user-attachments/assets/7f4a2b00-7fac-4f32-b4c6-adc727b06fc5" />
 Si modifico mi archivo localmente, el cambio aparece de inmediato en el contenedor, como se puede apreciar en la captura siguiente.
 <img width="368" height="159" alt="image" src="https://github.com/user-attachments/assets/1153ae0a-dead-496d-aeef-e30c256f2e4c" />
+### Ejercicio 5
+Con el comando `docker volume ls` puedo ver todos los volumenes creados. Ahora puedo inspeccionar un volumen cualquiera, por ejemplo pgdata, y comprobar toda su información, incluyendo el "Mountpoint", que es donde se guardan los datos. Ver siguiente captura.
+<img width="675" height="346" alt="image" src="https://github.com/user-attachments/assets/5f63388e-981c-49ea-bb1c-5a08cee3993a" />
 
