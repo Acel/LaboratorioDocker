@@ -43,5 +43,9 @@ Como se puede ver en la siguiente captura, los contenedores pueden hacer ping en
 <img width="638" height="575" alt="image" src="https://github.com/user-attachments/assets/9f2cdbfa-aa1a-4573-90cc-d8e98323a1be" />
 ### Ejercicio 7
 Ejecutar un contenedor de ese modo crea un contenedor sin ningún tipo de conectividad de red. No tendría IP, ni dispositivos de red. Serviría para aislarlo de internet simplemente, o de opciones de comunicación con otros contenedores.
-
+### Ejercicio 8
+Se crean las dos redes, el contenedor en public-zone. Por último se conecta también el contenedor a secure-zone. Ver captura:
+<img width="679" height="133" alt="image" src="https://github.com/user-attachments/assets/731cc1ca-1f7f-4261-80f5-21dfeb32476a" />
+En la siguiente captura se puede comprobar que efectivamente está conectado a las dos redes:
+<img width="1062" height="250" alt="image" src="https://github.com/user-attachments/assets/45c8d7e1-0c7f-406f-bdbb-419e3002893a" />
 
