@@ -48,4 +48,9 @@ Se crean las dos redes, el contenedor en public-zone. Por último se conecta tam
 <img width="679" height="133" alt="image" src="https://github.com/user-attachments/assets/731cc1ca-1f7f-4261-80f5-21dfeb32476a" />
 En la siguiente captura se puede comprobar que efectivamente está conectado a las dos redes:
 <img width="1062" height="250" alt="image" src="https://github.com/user-attachments/assets/45c8d7e1-0c7f-406f-bdbb-419e3002893a" />
+### Ejercicio 9
+Este es el fichero docker-compose.yml:
+<img width="840" height="429" alt="image" src="https://github.com/user-attachments/assets/d46e65cd-42b5-48d4-8f33-76910b5f4c75" />
+Y aquí se puede ver el resultado de la operación:
+<img width="514" height="172" alt="image" src="https://github.com/user-attachments/assets/f60c0d88-00f0-4544-9081-af117b7068af" />
 
