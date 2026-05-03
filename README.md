@@ -58,4 +58,9 @@ Este es el fichero docker-compose.yml:
 <img width="420" height="694" alt="image" src="https://github.com/user-attachments/assets/c8bb9582-f135-4d03-b1b4-f89918a6342a" />
 Ejecuto el perfil full: `docker compose --profile full up` y accedor a pgadmin mediante el navegador, donde registro una nueva base de datos con los datos proporcionados por las variables de entorno del archivo anterior:
 <img width="1912" height="601" alt="image" src="https://github.com/user-attachments/assets/a459687d-b8aa-47f4-89c9-127b8bb06420" />
+### Ejercicio bonus
+Este es el fichero docker-compose.yml:
+<img width="507" height="234" alt="image" src="https://github.com/user-attachments/assets/7f15361a-ba3c-4bd9-80ad-2f5ae8850001" />
+Y aqui localhost:8080
+<img width="569" height="165" alt="image" src="https://github.com/user-attachments/assets/578ba528-51c1-488e-a204-640557da4834" />
 
