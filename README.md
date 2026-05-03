@@ -35,4 +35,11 @@ Si modifico mi archivo localmente, el cambio aparece de inmediato en el contened
 ### Ejercicio 5
 Con el comando `docker volume ls` puedo ver todos los volumenes creados. Ahora puedo inspeccionar un volumen cualquiera, por ejemplo pgdata, y comprobar toda su información, incluyendo el "Mountpoint", que es donde se guardan los datos. Ver siguiente captura.
 <img width="675" height="346" alt="image" src="https://github.com/user-attachments/assets/5f63388e-981c-49ea-bb1c-5a08cee3993a" />
+### Ejercicio 6
+Se crea la red con el comando `docker network create my-net`. También se crean los dos contenedores según la captura adjunta:
+<img width="619" height="141" alt="image" src="https://github.com/user-attachments/assets/38d621a3-e05e-4d38-8bce-769c1d8f285e" />
+Ejecuto en mis dos contenedores `apt-get update` y `apt-get install -y iputils-ping`.
+Como se puede ver en la siguiente captura, los contenedores pueden hacer ping entre sí, al estar en la misma red:
+<img width="638" height="575" alt="image" src="https://github.com/user-attachments/assets/9f2cdbfa-aa1a-4573-90cc-d8e98323a1be" />
+
 
