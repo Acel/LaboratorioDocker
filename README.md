@@ -41,5 +41,7 @@ Se crea la red con el comando `docker network create my-net`. También se crean 
 Ejecuto en mis dos contenedores `apt-get update` y `apt-get install -y iputils-ping`.
 Como se puede ver en la siguiente captura, los contenedores pueden hacer ping entre sí, al estar en la misma red:
 <img width="638" height="575" alt="image" src="https://github.com/user-attachments/assets/9f2cdbfa-aa1a-4573-90cc-d8e98323a1be" />
+### Ejercicio 7
+Ejecutar un contenedor de ese modo crea un contenedor sin ningún tipo de conectividad de red. No tendría IP, ni dispositivos de red. Serviría para aislarlo de internet simplemente, o de opciones de comunicación con otros contenedores.
 
 
